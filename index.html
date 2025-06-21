@@ -1,0 +1,100 @@
+<!-- 19th June  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="outer">
+        <div class="container">
+            <div class="range">
+                <h2>Select the loan amount range</h2>
+                <input type="radio" name="option" id="1st"></input>
+                <label for="1st">0 - 1 Crore</label>
+                <input type="radio" name="option" id="2nd"></input>
+                <label for="2nd">1 Crore - 5 Crore</label>
+                <input type="radio" name="option" id="3rd"></input>
+                <label for="3rd">5 Crore - 30 Crore</label>
+
+                <div class="box">
+                    <h3>Loan Amount</h3>
+                    <input type="text" id="loan" value="5000000">
+                    <input type="range" id="range" oninput="findloan()">
+                    <div class="numbers">
+                        <span>1L</span>
+                        <span>25L</span>
+                        <span>50L</span>
+                        <span>75L</span>
+                        <span>1Cr</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>Illustrative Interest Rate p.a.</h4>
+                    <input type="text" id="interest" value="10">
+                    <input type="range" id="rate" oninput="findrate()">
+                    <div class="numbers">
+                        <span>1%</span>
+                        <span>5%</span>
+                        <span>10%</span>
+                        <span>15%</span>
+                        <span>20%</span>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <h4>Tenture( Month Years )</h4>
+                    <input type="text" id="years" value="15">
+                    <input type="range" id="tenture" oninput="findyears()">
+                    <div class="numbers">
+                        <span>1year</span>
+                        <span>30year</span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="second">
+                <div class="inside">
+                    <div class="amount">
+                        <div class="am">
+                            <div class="square"></div>
+                            Principal amount
+                        </div>
+                        <div id="principal">5000000/-</div>
+
+                        <div class="am">
+                            <div class="square" style="background-color: rgb(237, 155, 4);"></div>
+                            Interest amount
+                        </div>
+                        <div id="interest" style="margin-bottom: 10px;">4671533/-</div>
+
+                            Total amount
+                            <div id="total">9671446.06/-</div>
+                    </div>
+                    <div class="piechart">
+                        <div class="boxes">
+                            <div class="rectangle"></div>Principle
+                            <div class="rectangle" style="background-color: rgb(237, 155, 4);"></div>Interest
+                        </div>
+                        <canvas id="loanPieChart" width="250px" height="250px">Click the button to get PieChart</canvas>
+                    </div>
+                </div>
+                <div class="result">
+                    <h3 id="result">Your monthly EMI is 53730.26/-</h3>
+                    <button style="font-size: smaller; margin-right: 10px;" id="button" >Click to calculate EMI</button>
+                    <button >APPLY FOR HOME LONE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.outer
+{
+    height: 20em;
+    background-color: orange;
+    padding-top: 80px;
+}
+
+.container
+{
+    width: 76%;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px black, -1px -1px 6px black;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 38px;
+}
+
+.range
+{
+    width: 40%;
+}
+
+.box
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.box h4
+{
+    font-size: larger;
+}
+
+input[type="text"]
+{
+    width: min-content;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #a79f9f;
+    color: black;
+}
+
+
+.numbers
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.second
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.inside
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.am
+{
+    display: flex;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.square
+{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(209, 57, 57);
+}
+
+.rectangle
+{
+    width: 30px;
+    height: 10px;
+    background-color: rgb(209, 57, 57);
+}
+
+.boxes
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px;
+}
+
+.amount
+{
+    padding: 10px;
+}
+
+.loanPieChart
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: bisque;
+
+}
+
+.result
+{
+    text-align: center;
+}
+
+#result
+{
+    border-radius: 30px;
+    background-color: rgb(236, 198, 127);
+    color: black;
+    padding: 15px;
+}
+
+button
+{
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: orange;
+    padding: 10px;
+    font-size: small;
+    box-shadow: 1px 1px 6px black;
+}
+
+button:hover
+{
+    background-color: rgb(213, 129, 19);
+}
